@@ -1,0 +1,40 @@
+{
+  "name": "@risbot/validator",
+  "version": "1.0.0",
+  "author": "Ing. Armen Hajrapetjan <armen.hajrapetjan@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "typings": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "validator",
+    "form",
+    "generic",
+    "react",
+    "javascript",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig-esm.json & tsc --project tsconfig-cjs.json",
+    "test": "jest",
+    "lint": "eslint ./src/**/*.{js,ts}",
+    "prettier": "prettier --write ./src/**/*.{js,ts}"
+  },
+  "repository": "https://github.com/risbot/validator",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
+  }
+}
